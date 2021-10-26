@@ -4,7 +4,7 @@
 
 */
 
-/*
+
 const listamail = [
   'sgiulia18@hotmail.it',
   'giuliasardelli@hotmail.it',
@@ -38,7 +38,6 @@ if (mailTrovata == true){
   `La mail non è nella lista`;
 }
 
-+/
 
 // ****************************************************
 
