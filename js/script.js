@@ -4,8 +4,8 @@
 
 */
 
-
-const listamail = [
+/*
+const listaMail = [
   'sgiulia18@hotmail.it',
   'giuliasardelli@hotmail.it',
   'giulia1234@gmail.com',
@@ -14,15 +14,18 @@ const listamail = [
 ]
 ;
 
-console.log(listamail)
+console.log(listaMail)
+
 
 let mailTrovata = false;
 
-const mymail = prompt('inserire mail');
+const myMail = prompt('inserire mail');
 
-for (let i = 0; i < listamail.length; i++){
+for (let i = 0; i < listaMail.length; i++){
 
-  if(mymail === listamail[i]){
+  const mailRandom = listaMail[i]
+
+  if(myMail === mailRandom){
     mailTrovata = true;
     console.log('trovata')
   }
@@ -37,6 +40,7 @@ if (mailTrovata == true){
   document.getElementById('mail').innerHTML=
   `La mail non è nella lista`;
 }
+*/
 
 
 // ****************************************************
@@ -66,13 +70,24 @@ console.log(pcnum)
 document.getElementById('pcdadi').innerHTML=
 `Il numero estratto per il pc è: ${pcnum}`;
 
+
+let vincitore;
+
+
 if(mynum > pcnum){
-  document.getElementById('vincitore').innerHTML=
-  `Vince l'utente`;
+  vincitore= "l'utente";
+
+  // document.getElementById('vincitore').innerHTML=
+  // `Vince l'utente`;
 } else if(pcnum > mynum){
-  document.getElementById('vincitore').innerHTML=
-  `Vince il pc`;
+  vincitore= "il pc";
+  // document.getElementById('vincitore').innerHTML=
+  // `Vince il pc`;
 } else {
-  document.getElementById('vincitore').innerHTML=
-  `Vincono entrambi`;
+  vincitore= "entrambi";
+  // document.getElementById('vincitore').innerHTML=
+  // `Vincono entrambi`;
 }
+
+document.getElementById('vincitore').innerHTML= 
+`Vincitore: ${vincitore}`
